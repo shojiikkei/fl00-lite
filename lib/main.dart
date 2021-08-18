@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/screens/ex0/ex0.dart';
+import 'package:my_app/screens/ex1/ex1.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,17 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "はじめてのアプリ",
-      home: Scaffold(
-        appBar: AppBar(
-        title: Text("Welcome to Flutter"),
-        centerTitle: true,
-        ),
-        body: Center(
-          child: Text('Hello World', style: TextStyle(fontSize: 15),
-            textAlign: TextAlign.center,
-          ),
-        ),
-      ),
+      home: Ex1()
     );
   }
 }
